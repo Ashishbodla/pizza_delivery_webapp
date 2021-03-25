@@ -1,0 +1,18 @@
+version: "3"
+services:
+       web:
+           container_name: web
+           image: web
+           restart: always
+           build: .
+           ports:
+             - "7500:7500"
+           links:
+             - mongo
+       mongo:
+             container_name: mongo
+             image: mongo
+             volumes:
+               - ./EmployeeDB:/data/db
+             ports:
+               - '27017:27018'
