@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset "UTF-8">
+<meta name ="viewport" content ="width-device-width,initial scale=1.0">
+<title> Mac Life Pizzas </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+
+  #main-home.header-top.item a{
+  color: #000000;
+  }
+
+  #main-home.header-top.item a:hover{
+    color:#FF004D;
+  }
+
+  .bg-pink{
+    background-color: red;
+  }
+
+  .color-pink{
+    color:#FF004D;
+  }
+
+  #main-home.navbar.nav-item{
+    padding:10px 15px;
+    align:center;
+
+  }
+
+  .navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.navbar-nav > li{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+  .navbar-nav.navbar {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+
+  #main-home.navbar.nav-item .nav-link{
+  color: #000000;
+  }
+
+  #main-home.navbar.nav-item .nav-link:hover{
+  color: #FF004D;
+  }
+
+  #main-home.navbar.cart-icon{
+    color:#ffffff;
+    padding:10px;
+  }
+
+  @media only screen and (max-width:580px){
+    #main-home.header-top{
+      flex-direction:column;
+    }
+  }
+
+  html,body{
+    font-family: 'Poppins', sans-serif;
+    background: #caa472;
+
+
+  }
+
+  .navs{
+    background: #caa472;
+
+  }
+
+  .btn-theme{
+    background-color: #FF004D;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+
+  .btn-theme:hover{
+    background-color: #FF004D;
+    box-shadow:0px 0px 0px 4px rgba(255,0,70,0.5);
+  }
+
+
+
+
+  </style>
+
+
+</head>
+
+<body>
+
+<section id="main-home">
+<header>
+<div class="container">
+<div class="header-top d-flex justify-content-between pt-2">
+<div class="d-flex justify-content-between">
+<div class="item px-2">
+<p> <strong>Follow Us:</strong></p>
+</div>
+
+<div class="item px-2">
+<a href = ""><i class="fab fa-facebook-f"></i>
+</a>
+</div>
+
+<div class="item px-2">
+<a href = ""><i class="fab fa-twitter"></i>
+</a>
+</div>
+
+<div class="item px-2">
+<a href = ""><i class="fab fa-instagram"></i>
+</a>
+</div>
+
+</div>
+<div class="d-flex justify-content-between">
+  <div class="item px-2">
+    <p> <i class="fas fa-phone-alt"></i> +44482791934</p>
+    </div>
+
+    <div class="item px-2">
+      <p> <i class="fas fa-map-marker-alt"></i> LONDON</p>
+      </div>
+
+
+
+  </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-O">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav navbar-center"">
+        <li class="nav-item active">
+          <a class="nav-link active" href="#">Home <i class="fa fa-home" aria-hidden="true"></i>
+</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="/employee/aboutus"><i class="fas fa-house-user"></i>About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="/employee/list"> <i class="fas fa-pizza-slice"></i> Select Pizza's</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active " href="gallery.html"> <i class="fa fa-camera" aria-hidden="true"></i>
+Gallery</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link active " href="/employee/aboutus"> <i class="fa fa-phone"></i>Contact Us</a>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</div>
+</header>
+
+<div class="bg-image">
+<div id="banner-slider" class="pt-5">
+  <div class="container">
+<div class="OwlCarousel owl-theme">
+
+  <div class="item">
+    <div class="row">
+     <div class="col-md-6 my-auto">
+       <div>
+         <img src="images/pizza-logo.png" alt="Mac Life Pizzas" width="200px">
+
+         <h3> Fresh Mac Life Pizzas</h3>
+         <h1> <span class="color-pink"><b>MAC LIFE Mexican Spicy Pizza</b></span> </h1>
+         <p class="py-2"> Flattened base of leavened wheat-based dough topped with mozirilla cheese, mexcican spicy cheese, onions, basil leaves, green peppers, red peppers, fried pickles and spices.  </p>
+         <!-- <a href="pizzaselection.html" class="btn btn-theme"> Choose Your Pizza</a> -->
+         <div class="form-group">
+             <!-- <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button> -->
+             <a class="btn btn-theme" href="/employee/list"><i class="fa fa-list-alt"></i> Choose Your Pizza </a>
+         </div>
+         </div>
+       </div>
+       <div class="col-md-6">
+         <img src="images/pizza-bg.jpg" alt="" width="700px">
+
+
+
+         </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  </div>
+  </div>
+
+
+</section>
+</body>
+</html>
+
+<script type="text/javascript">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#banner-slider.owl-carousal").OwlCarousel({
+
+      items:1,
+      loop:true,
+      autoplay:true
+  });
+  });
+</script>
+
+<script src="assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+
+<h3>{{viewTitle}}</h3>
+<div class = 'container'>
+<form action="/employee" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{employee.fullName}}">
+        <div class="text-danger">
+            {{employee.fullNameError}}</div>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" placeholder="Email" value="{{employee.email}}">
+        <div class="text-danger">
+            {{employee.emailError}}</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Mobile</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Mobile" value="{{employee.mobile}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>City</label>
+            <input type="text" class="form-control" name="city" placeholder="City" value="{{employee.city}}">
+        </div>
+    </div>
+    <div class="form-row">
+        <label>Order</label>
+        <!-- <input type="text" id="cat-drop-id" class="som-changecat-category-dropdown" name="order" placeholder="Order" value="{{employee.order}}"> -->
+        <select type="text" class="selectpicker" multiple data-live-search="true" name="order", placeholder="Order", value="{{employee.order}}">
+        <optgroup label="Select Pizza">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </optgroup>
+    </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/employee/list"><i class="fa fa-list-alt"></i> Order Now </a>
+    </div>
+
+</form>
+</div>
